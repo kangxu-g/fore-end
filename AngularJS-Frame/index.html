@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html ng-app="templateApp">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="js/plugins/FullPage/css/jquery.fullPage.css" />
+		<style>
+			.section {
+	            text-align: center;
+	            font: 30px "Microsoft Yahei";
+	            color: #fff;
+	        }
+		</style>
+	</head>
+	<body>
+		
+		
+		
+		<div ng-include="'tpl/header.html'" ng-controller="HeaderController"></div>
+		<h1>gfdgfg</h1>
+		<div ui-view></div>
+        <h1>ghjhjh</h1>
+		<div ng-include="'tpl/footer.html'" ng-controller="FooterController"></div>
+
+		<!--<div id="dowebok">
+	        <div class="section">
+	            <p>根据可视区域大小启用/关闭全屏滚动效果</p>
+	        </div>
+	        <div class="section">
+	            <p>如果可视区宽度小于1024，则关闭全屏滚动效果，使用自带的滚动条</p>
+	        </div>
+	        <div class="section">
+	            <p>请试着调整浏览器大小并查看滚动条是否出现</p>
+	        </div>
+	        <div class="section">
+	            <p>第四屏</p>
+	        </div>
+	    </div>-->
+		
+		<script type="text/javascript" src="js/plugins/jquery/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/plugins/FullPage/js/jquery.fullPage.js" ></script>
+		<script>
+	        //$(function () {
+	        //    $('#dowebok').fullpage({
+	        //        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90']
+	        //    });
+	
+	        //    $(window).resize(function () {
+	        //        autoScrolling();
+	        //    });
+	
+	        //    function autoScrolling() {
+	        //        var $ww = $(window).width();
+	        //        if ($ww < 1024) {
+	        //            $.fn.fullpage.setAutoScrolling(false);
+	        //        } else {
+	        //            $.fn.fullpage.setAutoScrolling(true);
+	        //        }
+	        //    }
+	
+	        //    autoScrolling();
+ 
+	        //});
+	    </script>
+		
+		<!-- angularjs -->
+		<script src="js/plugins/angular-1.4.7/angular.js"></script>
+	    <script src="js/plugins/angular-ui-router/release/angular-ui-router.min.js"></script>
+	    <script src="js/plugins/oclazyload/dist/ocLazyLoad.min.js"></script>
+	    <script src="js/app.config.js"></script>
+	    <script src="js/oclazyload.config.js"></script>
+	    <script src="js/route.config.js"></script>
+	    <script type="text/javascript" src="js/factorys/HeaderFactory.js" ></script>
+	    <script type="text/javascript" src="js/controllers/HeaderController.js" ></script>
+	    <script type="text/javascript" src="js/controllers/FooterController.js" ></script>
+	</body>
+</html>
